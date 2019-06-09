@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery Load (js和css有问题？)</title>
+        <script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            jQuery(function(){
+                jQuery('#loadPage').click(function(){
+                    jQuery('#pagecontainer').load('https://login2.nide8.com:233/account/login/', 
+                            function(){alert('Content Successfully Loaded.')} 
+                    );
+                });
+            })
+        </script>        
+    </head>
+    <body>
+        <a href="javascript:void(0)" id="loadPage">Click To Load Web Page</a><br/>
+        <div id="pagecontainer"></div>        
+    </body>
+</html>
